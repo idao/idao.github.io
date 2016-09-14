@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://jekyllcn.com/docs/frontmatter/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="generator" content="Jekyll v3.2.1">
+  <link type="application/atom+xml" rel="alternate" href="http://jekyllcn.com/feed.xml" title="Jekyll • 简单静态博客网站生成器">
+  <link rel="alternate" type="application/atom+xml" title="Recent commits to Jekyll’s master branch" href="https://github.com/jekyll/jekyll/commits/master.atom">
+  <link rel="stylesheet" href="./头信息 - Jekyll • 简单静态博客网站生成器_files/css">
+  <link rel="stylesheet" href="./头信息 - Jekyll • 简单静态博客网站生成器_files/screen.css">
+  <link rel="icon" type="image/x-icon" href="http://jekyllcn.com/favicon.ico">
+  <!-- Begin Jekyll SEO tag v2.0.0 -->
+<title>头信息 - Jekyll • 简单静态博客网站生成器</title>
+<meta property="og:title" content="头信息">
+<meta name="description" content="将纯文本转换为静态博客网站">
+<meta property="og:description" content="将纯文本转换为静态博客网站">
+<link rel="canonical" href="http://jekyllcn.com/docs/frontmatter/">
+<meta property="og:url" content="http://jekyllcn.com/docs/frontmatter/">
+<meta property="og:site_name" content="Jekyll • 简单静态博客网站生成器">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-08-21T23:18:30-07:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@jekyllrb">
+<script src="./头信息 - Jekyll • 简单静态博客网站生成器_files/analytics.js"></script><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "头信息",
+    "datePublished": "2016-08-21T23:18:30-07:00",
+    "description": "将纯文本转换为静态博客网站",
+    "logo": "http://jekyllcn.comimg/logo-2x.png",
+    "url": "http://jekyllcn.com/docs/frontmatter/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+  <!--[if lt IE 9]>
+  <script src="/js/html5shiv.min.js"></script>
+  <script src="/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+
+<body class="wrap">
+　　<header>
+  <nav class="mobile-nav show-on-mobiles">
+    <ul>
+  <li class="">
+    <a href="http://jekyllcn.com/">首页</a>
+  </li>
+  <li class="current">
+    <a href="http://jekyllcn.com/docs/home/">文档</a>
+  </li>
+  <li class="">
+    <a href="http://jekyllcn.com/news/">新闻</a>
+  </li>
+  <li class="">
+    <a href="http://jekyllcn.com/community/">社区</a>
+  </li>
+  <li class="">
+    <a href="http://jekyllcn.com/help/">帮助</a>
+  </li>
+  <li>
+    <a href="https://github.com/xcatliu/jekyllcn">jekyllCN</a>
+  </li>
+</ul>
+
+  </nav>
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <h1>
+        <a href="http://jekyllcn.com/">
+          <span class="sr-only">Jekyll</span>
+          <img src="./头信息 - Jekyll • 简单静态博客网站生成器_files/logo-2x.png" width="249" height="115" alt="Jekyll Logo">
+        </a>
+      </h1>
+    </div>
+    <nav class="main-nav unit two-thirds hide-on-mobiles">
+      <ul>
+  <li class="">
+    <a href="http://jekyllcn.com/">首页</a>
+  </li>
+  <li class="current">
+    <a href="http://jekyllcn.com/docs/home/">文档</a>
+  </li>
+  <li class="">
+    <a href="http://jekyllcn.com/news/">新闻</a>
+  </li>
+  <li class="">
+    <a href="http://jekyllcn.com/community/">社区</a>
+  </li>
+  <li class="">
+    <a href="http://jekyllcn.com/help/">帮助</a>
+  </li>
+  <li>
+    <a href="https://github.com/xcatliu/jekyllcn">jekyllCN</a>
+  </li>
+</ul>
+
+    </nav>
+  </div>
+</header>
+
+
+    <section class="docs">
+    <div class="grid">
+
+      <div class="docs-nav-mobile unit whole show-on-mobiles">
+  <select onchange="if (this.value) window.location.href=this.value">
+    <option value="">Navigate the docs…</option>
+    
+    <optgroup label="开始">
+      
+  
+  
+  <option value="http://jekyllcn.com/docs/home/">欢迎</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/quickstart/">快速指南</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/installation/">安装</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/usage/">基本用法</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/structure/">目录结构</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/configuration/">配置</option>
+
+
+    </optgroup>
+    
+    <optgroup label="博客内容">
+      
+  
+  
+  <option value="http://jekyllcn.com/docs/frontmatter/">头信息</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/posts/">撰写博客</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/drafts/">使用草稿</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/pages/">创建页面</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/static-files/">静态文件</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/variables/">常用变量</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/collections/">集合（Collections）</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/datafiles/">数据文件</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/assets/">资源</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/migrations/">博客迁移</option>
+
+
+    </optgroup>
+    
+    <optgroup label="个性化">
+      
+  
+  
+  <option value="http://jekyllcn.com/docs/templates/">模板</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/permalinks/">永久链接</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/pagination/">分页功能</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/plugins/">插件</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/themes/">主题</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/extras/">附加功能</option>
+
+
+    </optgroup>
+    
+    <optgroup label="发布">
+      
+  
+  
+  <option value="http://jekyllcn.com/docs/github-pages/">GitHub Pages</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/deployment-methods/">部署方法</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/continuous-integration/">持续集成</option>
+
+
+    </optgroup>
+    
+    <optgroup label="杂项">
+      
+  
+  
+  <option value="http://jekyllcn.com/docs/troubleshooting/">常见问题</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/sites/">使用 Jekyll 的站点</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/resources/">相关资源</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/upgrading/0-to-2/">从 0.x 升级到 2.x 版本</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/upgrading/2-to-3/">Upgrading from 2.x to 3.x</option>
+
+
+    </optgroup>
+    
+    <optgroup label="元信息">
+      
+  
+  
+  <option value="http://jekyllcn.com/docs/contributing/">Contributing</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/conduct/">Code of Conduct</option>
+
+  
+  
+  <option value="http://jekyllcn.com/docs/history/">History</option>
+
+
+    </optgroup>
+    
+  </select>
+</div>
+
+
+      <div class="unit four-fifths">
+        <article>
+          <div class="improve right hide-on-mobiles">
+            <a href="https://github.com/xcatliu/jekyllcn/edit/master/site/_docs/frontmatter.md"><i class="fa fa-pencil"></i> &nbsp;发现错误或贡献翻译</a>
+          </div>
+          <h1>头信息</h1>
+          <p>正是头信息开始让 Jekyll 变的很酷。任何只要包含 <a href="http://yaml.org/">YAML</a> 头信息的文件在 Jekyll 中都能被当做一个特殊的文件来处理。头信息必须在文件的开始部分，并且需要按照 YAML 的格式写在两行三虚线之间。下面是一个基本的例子：</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="nn">---</span>
+<span class="s">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="s">title</span><span class="pi">:</span> <span class="s">Blogging Like a Hacker</span>
+<span class="nn">---</span></code></pre></figure>
+
+<p>在这两行的三虚线之间，你可以设置预定义的变量（下面这个例子可以作为参考），甚至创建一个你自己定义的变量。这样在接下来的文件和任意模板中或者在包含这些页面或博客的模板中都可以通过使用 Liquid 标签来访问这些变量。</p>
+
+<div class="note warning">
+  <h5>UTF-8 编码方式警告</h5>
+  <p>
+    如果你使用 UTF-8 编码，那么在你的文件中一定不要出现 <code>BOM</code> 头字符，否则你会碰上非常糟糕的事情，尤其当你在 Windows 上使用 Jekyll 的时候。
+  </p>
+</div>
+
+<div class="note">
+  <h5>提示™：头信息变量是可选的</h5>
+  <p>
+    如果你想使用<a href="http://jekyllcn.com/docs/variables/"> Liquid 标签和变量</a>但在头信息中又不需要任何定义，那你就让头信息空着！在头信息为空的情况下，Jekyll 仍然能够处理文件。（这对于一些像 CSS 和 RSS 的文件非常有用）
+  </p>
+</div>
+
+<h2 id="section">预定义的全局变量<a class="header-link" href="http://jekyllcn.com/docs/frontmatter/#section" title="Permalink"><span class="sr-only">Permalink</span><i class="fa fa-link"></i></a></h2>
+
+<p>你可以在页面或者博客的头信息里设置这些已经预定义好的全局变量。</p>
+
+<div class="mobile-side-scroller">
+<table>
+  <thead>
+    <tr>
+      <th>变量名称</th>
+      <th>描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <p><code>layout</code></p>
+      </td>
+      <td>
+        <p>
+
+          如果设置的话，会指定使用该模板文件。指定模板文件时候不需要文件扩展名。模板文件必须放在 <code>_layouts</code> 目录下。
+
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>permalink</code></p>
+      </td>
+      <td>
+        <p>
+
+          如果你需要让你发布的博客的 URL 地址不同于默认值 <code>/year/month/day/title.html</code>，那你就设置这个变量，然后变量值就会作为最终的 URL 地址。
+
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>published</code></p>
+      </td>
+      <td>
+        <p>
+          如果你不想在站点生成后展示某篇特定的博文，那么就设置（该博文的）该变量为 false。
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p style="margin-bottom: 5px;"><code>category</code></p>
+        <p><code>categories</code></p>
+      </td>
+      <td>
+        <p>
+
+          除过将博客文章放在某个文件夹下面外，你还可以指定博客的一个或者多个分类属性。这样当你的站点生成后，这些文章就可以根据这些分类来阅读。<code>categories</code> 可以通过 <a href="http://en.wikipedia.org/wiki/YAML#Lists">YAML list</a>，或者以逗号隔开的字符串指定。
+
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>tags</code></p>
+      </td>
+      <td>
+        <p>
+
+          类似分类 <code>categories</code>，一篇文章也可以给它增加一个或者多个标签。同样，<code>tags</code> 可以通过 YAML 列表或者以逗号隔开的字符串指定。
+
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="section-1">自定义变量<a class="header-link" href="http://jekyllcn.com/docs/frontmatter/#section-1" title="Permalink"><span class="sr-only">Permalink</span><i class="fa fa-link"></i></a></h2>
+
+<p>在头信息中没有预先定义的任何变量都会在数据转换中通过 Liquid 模板被调用。例如，如果你设置一个 title 变量，然后你就可以在你的模板中使用这个 title 变量来设置页面的标题（title）：</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>{{ page.title }}<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    ...</code></pre></figure>
+
+<h2 id="section-2">在文章中预定义的变量<a class="header-link" href="http://jekyllcn.com/docs/frontmatter/#section-2" title="Permalink"><span class="sr-only">Permalink</span><i class="fa fa-link"></i></a></h2>
+
+<p>在文章中可以使用这些在头信息变量列表中未包含的变量。</p>
+
+<div class="mobile-side-scroller">
+<table>
+  <thead>
+    <tr>
+      <th>变量名称</th>
+      <th>描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <p><code>date</code></p>
+      </td>
+      <td>
+        <p>
+          这里的日期会覆盖文章名字中的日期。这样就可以用来保障文章排序的正确。日期的具体格式为<code>YYYY-MM-DD HH:MM:SS +/-TTTT</code>；时，分，秒和时区都是可选的。
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="note">
+  <h5>提示™: 不要重复</h5>
+  <p>
+    如果你不想重复设置你常用的头信息变量，只需为它们定义<a href="http://jekyllcn.com/docs/configuration/#front-matter-defaults" title="Front Matter defaults">默认值</a>，仅在必要的时候（或者从不）覆盖它们即可。这种方式对预定义变量和自定义变量都有效。
+  </p>
+</div>
+
+
+          <div class="jekyllcn-doc-footer">
+            <p class="left"><a href="http://jekyllrb.com/docs/frontmatter/">原文链接</a></p>
+            <p class="right">
+              翻译贡献者：
+              
+              <a href="https://github.com/liul85" title="liul85">
+                <img src="./头信息 - Jekyll • 简单静态博客网站生成器_files/liul85.png" class="avatar" alt="liul85 avatar" width="24" height="24">
+              </a>
+              
+              <a href="https://github.com/LeuisKen" title="LeuisKen">
+                <img src="./头信息 - Jekyll • 简单静态博客网站生成器_files/LeuisKen.png" class="avatar" alt="LeuisKen avatar" width="24" height="24">
+              </a>
+              
+              <a href="https://github.com/TimoTokki" title="TimoTokki">
+                <img src="./头信息 - Jekyll • 简单静态博客网站生成器_files/TimoTokki.png" class="avatar" alt="TimoTokki avatar" width="24" height="24">
+              </a>
+              
+            </p>
+            <div class="clear"></div>
+          </div>
+
+          
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="section-nav">
+      <div class="left align-right">
+          
+            
+            
+            <a href="http://jekyllcn.com/docs/configuration/" class="prev">上一节</a>
+          
+      </div>
+      <div class="right align-left">
+          
+            
+            
+            <a href="http://jekyllcn.com/docs/posts/" class="next">下一节</a>
+          
+      </div>
+    </div>
+    <div class="clear"></div>
+    
+        </article>
+      </div>
+
+      <div class="unit one-fifth hide-on-mobiles">
+  <aside>
+    
+    <h4>开始</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/home/">欢迎</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/quickstart/">快速指南</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/installation/">安装</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/usage/">基本用法</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/structure/">目录结构</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/configuration/">配置</a></li>
+
+</ul>
+
+    
+    <h4>博客内容</h4>
+    <ul>
+
+  
+  
+  <li class="current"><a href="http://jekyllcn.com/docs/frontmatter/">头信息</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/posts/">撰写博客</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/drafts/">使用草稿</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/pages/">创建页面</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/static-files/">静态文件</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/variables/">常用变量</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/collections/">集合（Collections）</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/datafiles/">数据文件</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/assets/">资源</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/migrations/">博客迁移</a></li>
+
+</ul>
+
+    
+    <h4>个性化</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/templates/">模板</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/permalinks/">永久链接</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/pagination/">分页功能</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/plugins/">插件</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/themes/">主题</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/extras/">附加功能</a></li>
+
+</ul>
+
+    
+    <h4>发布</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/github-pages/">GitHub Pages</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/deployment-methods/">部署方法</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/continuous-integration/">持续集成</a></li>
+
+</ul>
+
+    
+    <h4>杂项</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/troubleshooting/">常见问题</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/sites/">使用 Jekyll 的站点</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/resources/">相关资源</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/upgrading/0-to-2/">从 0.x 升级到 2.x 版本</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/upgrading/2-to-3/">Upgrading from 2.x to 3.x</a></li>
+
+</ul>
+
+    
+    <h4>元信息</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/contributing/">Contributing</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/conduct/">Code of Conduct</a></li>
+
+  
+  
+  <li class=""><a href="http://jekyllcn.com/docs/history/">History</a></li>
+
+</ul>
+
+    
+  </aside>
+</div>
+
+
+      <div class="clear"></div>
+
+    </div>
+  </section>
+
+
+  <footer>
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <p>The contents of this website are <br>©&nbsp;2016 under the terms of the <a href="https://github.com/jekyll/jekyll/blob/master/LICENSE">MIT&nbsp;License</a>.</p>
+    </div>
+    <div class="unit two-thirds align-right center-on-mobiles">
+      <p>
+        Proudly hosted by
+        <a href="https://github.com/">
+          <img src="./头信息 - Jekyll • 简单静态博客网站生成器_files/footer-logo.png" width="100" height="30" alt="GitHub • Social coding">
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+<div class="grid">
+  <div class="unit whole center-on-mobiles">
+    <p>此网站由
+      <a href="https://github.com/xcatliu">@xcatliu</a>
+      维护，由
+      <a href="https://github.com/xcatliu/jekyllcn/graphs/contributors">开源爱好者们</a>
+      共同翻译。若发现错误或想贡献翻译，请访问：
+      <a href="https://github.com/xcatliu/jekyllcn/">xcatliu/jekyllCN</a>
+    </p>
+  </div>
+</div>
+
+  <script>
+  var anchorForId = function (id) {
+    var anchor = document.createElement("a");
+    anchor.className = "header-link";
+    anchor.href      = "#" + id;
+    anchor.innerHTML = "<span class=\"sr-only\">Permalink</span><i class=\"fa fa-link\"></i>";
+    anchor.title = "Permalink";
+    return anchor;
+  };
+
+  var linkifyAnchors = function (level, containingElement) {
+    var headers = containingElement.getElementsByTagName("h" + level);
+    for (var h = 0; h < headers.length; h++) {
+      var header = headers[h];
+
+      if (typeof header.id !== "undefined" && header.id !== "") {
+        header.appendChild(anchorForId(header.id));
+      }
+    }
+  };
+
+  document.onreadystatechange = function () {
+    if (this.readyState === "complete") {
+      var contentBlock = document.getElementsByClassName("docs")[0] || document.getElementsByClassName("news")[0];
+      if (!contentBlock) {
+        return;
+      }
+      for (var level = 1; level <= 6; level++) {
+        linkifyAnchors(level, contentBlock);
+      }
+    }
+  };
+</script>
+
+  
+
+
+  <!-- Google Analytics (http://google.com/analytics) -->
+  <script>
+    !function(j,e,k,y,l,L){j.GoogleAnalyticsObject=y,j[y]||(j[y]=function(){
+    (j[y].q=j[y].q||[]).push(arguments)}),j[y].l=+new Date,l=e.createElement(k),
+    L=e.getElementsByTagName(k)[0],l.src='//www.google-analytics.com/analytics.js',
+    L.parentNode.insertBefore(l,L)}(window,document,'script','ga');
+
+    ga('create', 'UA-45256157-1', 'jekyllcn.com');
+    ga('send', 'pageview');
+
+  </script>
+
+
+
+
+
+</body></html>

@@ -1,0 +1,25 @@
+<footer id="" class="article-footer">
+  <div class="container">
+    <div class="row pagination">
+
+      {% if page.previous %}
+        <div class="column">
+          <a class="pagination-item previous" href="{{ page.previous.url }}">
+            <span>上一篇</span>
+            <h4><i class="fa fa-angle-left" aria-hidden="true"></i> {{ page.previous.title }}</h4>
+          </a>
+        </div>
+      {% endif %}
+
+      {% if page.next %}
+        <div class="column">
+          <a class="pagination-item next" href="{{ page.next.url }}">
+            <span>下一篇</span>
+            <h4>{{ page.next.title }} <i class="fa fa-angle-right" aria-hidden="true"></i></h4>
+          </a>
+        </div>
+      {% endif %}
+      
+    </div>
+  </div>
+</footer>

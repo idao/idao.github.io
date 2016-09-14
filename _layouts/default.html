@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="article">
+
+    {% include sidebar.html %}
+
+    <main id="main">
+      <header id="header" class="article-header nav-down">
+        <div class="container">
+          <div class="navigation between">
+            <div id="sidebar-trigger" class="trigger">
+              <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+            </div>
+            <div class="title">第一课<sup> PM</sup></div>
+            <ul class="menu">
+              <li><i class="fa fa-weixin fa-lg" aria-hidden="true"></i></li>
+              <li><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <article id="article" class="article-post">
+        <div class="container">
+          <header>
+            <h2 class="post-title">{{ page.title }}</h2>
+            <span class="post-date">{{ page.date | date_to_string }}</span>
+          </header>
+
+
+          {{ page.content }}
+
+        </div>
+      </article>
+
+      {% include paginator.html %}
+
+    </main>
+
+
+    <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/js/jquery.jpanelmenu.js"></script>
+    <script src="{{ site.baseurl }}/js/script.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,434 @@
+// 第三方CSS库
+@import "font-awesome.css";
+@import "normalize.css";
+
+// 自定义库
+@import "color";
+@import "layout";
+@import "detail";
+@import "kit";
+@import "font";
+
+
+
+/*
+* 首页 CSS
+* index.html CSS
+*/
+
+section#index {
+  .container { text-align: center; padding: 8rem 0; }
+  .brand { margin-bottom: 6.4rem; }
+  .brand h1 {
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    text-indent: -9999999px;
+    background: url("../img/logo.png") no-repeat center center;
+    background-size: contain;
+    width: 240px;
+    height: 180px;
+    overflow: hidden;
+  }
+  .brand .desc { color: $black-light; font-weight: lighter; }
+
+  .btn-group a {
+    font-size: 2rem;
+    font-size: $font-cal;
+    padding: 1rem 2rem;
+    border-bottom-color: darken($brand, 4);
+    border-width: 3px;
+    border-radius: 1000px;
+
+    &:hover {
+      border-bottom-color:transparent;
+    }
+  }
+  .btn-group .basic-teaching,
+  .btn-group .practical-training { display: inline-block; margin: 0 1rem;}
+  .practical-training { position: relative; }
+  .practical-training p { text-transform: uppercase; font-size: 10px; color: $gray-light; position: absolute; left: 50%; transform: translateX(-50%); }
+}
+
+
+section#core {
+  margin-bottom: 8rem;
+
+  .container::before {
+    display: block;
+    content: "‐ 核心价值 ‐";
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 10px;
+    font-weight: lighter;
+    color: $gray;
+  }
+
+  .column { text-align: center; }
+
+  h3 { display: inline-block; color: $black; padding-left: 4rem; line-height: 3rem; height: 3rem; }
+
+  .experience-sharing h3 {
+    background: url(../img/icon-experience-sharing.png) no-repeat left center;
+    background-size: contain;
+  }
+  .tool-stacks h3 {
+    background: url(../img/icon-tool-stacks.png) no-repeat left center;
+    background-size: contain;
+  }
+  .practical-thinking h3 {
+    background: url(../img/icon-practical-thinking.png) no-repeat left center;
+    background-size: contain;
+  }
+
+  p.desc { color: $black-light; }
+}
+
+
+section#oriented {
+  margin-bottom: 8rem;
+
+  .container::before {
+    display: block;
+    content: "‐ 本课程适合人群 ‐";
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 10px;
+    font-weight: lighter;
+    color: $gray;
+  }
+
+  .oriented {
+    border: 1px solid $gray-light;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0 1rem;
+    transition: all .3s ease;
+
+    .col-top {
+      padding: 1rem;
+      padding-top: 15rem;
+      transition: all .3s ease;
+
+      h4 {
+        color: #fff;
+        text-shadow: 1px 1px 2px rgba(0,0,0,.4);
+        font-size: 40px;
+        margin: 0;
+      }
+
+      h4::before {
+        display: block;
+        content: "我是";
+        padding-left: 3px;
+        font-size: .4em;
+        font-weight: lighter;
+        color: rgba(#fff,.5);
+      }
+    }
+
+    &.producter .col-top {
+      background: url(../img/producter.jpg) no-repeat center center;
+      background-size: 101%;
+    }
+    &.designer .col-top {
+      background: url(../img/designer.jpg) no-repeat center center;
+      background-size: 101%;
+    }
+    &.progammer .col-top {
+      background: url(../img/progammer.jpg) no-repeat center center;
+      background-size: 101%;
+    }
+
+    .col-bottom {
+      padding: 1rem;
+      overflow: hidden;
+      font-size: .8rem;
+    }
+  }
+
+  .oriented:hover {
+    box-shadow: 0px 1px 10px rgba(0,0,0,.1);
+    .col-top {
+      background-size: 105%;
+    }
+  }
+}
+
+
+section#why {
+  margin-bottom: 8rem;
+
+  .container::before {
+    display: block;
+    content: "‐ 设计该课程初衷 ‐";
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 10px;
+    font-weight: lighter;
+    color: $gray;
+  }
+
+  blockquote {
+    margin: 0 auto;
+    max-width: 600px;
+    color: $gray;
+    img { border-radius: 100px; }
+  }
+
+}
+
+
+footer#footer {
+
+  background-color: $white-dark;
+
+  .title {
+    font-size: 10px;
+    font-weight: lighter;
+    color: $gray;
+  }
+
+  .footer-top {
+
+    .container {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(0,0,0,.05);
+    }
+
+    input[type="text"] {
+      width: 240px;
+      font-size: 14px;
+      padding: 10px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      color: $black-light;
+      transition: all .3s ease;
+
+      &:hover {
+        border-color: $brand;
+      }
+    }
+
+    .follow-me a {
+      display: inline-block;
+      margin: 0 .8rem;
+      color: $gray;
+      &:hover {
+        color: $black-light;
+      }
+    }
+
+
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+    color: $gray;
+    padding: 2rem 0;
+  }
+
+}
+
+
+@media screen and (max-width:760px){
+  section#core {
+    .row {
+      display: flex;
+      flex-direction: column;
+      padding: 0 2rem;
+    }
+    .row .column {
+      margin-bottom: 2rem;
+    }
+  }
+  section#oriented {
+    .row {
+      display: flex;
+      flex-direction: column;
+      padding: 0 2rem;
+    }
+    .row .column {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  }
+  section#why {
+    .container {
+      padding: 0 2rem;
+    }
+  }
+  footer#footer {
+    text-align: center;
+    .row {
+      display: flex;
+      flex-direction: column;
+      padding: 0 2rem;
+    }
+    .row .column {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width:480px){
+  section#index {
+    .btn-group a { display: block; width: 100%; }
+    .btn-group .basic-teaching { margin-bottom: 2rem; }
+  }
+
+  footer#footer {
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+
+/*
+* article
+* 文章
+*/
+
+
+main#main {
+  padding-top: 64px;
+  position: relative;
+}
+
+
+header.article-header {
+  position: fixed;
+  height: 64px;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+
+  color: $gray;
+  background-color: #fff;
+  border-bottom: 1px solid $gray-light;
+  z-index: 1000;
+
+  &.nav-up {
+      top: -64px !important;
+  }
+
+  .trigger { padding: 1rem; margin-left: -1rem; cursor: pointer; transition: color .3s ease; }
+  & .trigger:hover { color: $brand; }
+
+  .title {
+    color: $gray-light;
+    sup { font-weight: lighter; }
+  }
+  .menu li { color: $gray-light; transition: color .3s ease; }
+  .menu li:hover { color: $gray; }
+}
+
+article.article-post {
+  font-size: 1.3em;
+  padding: 4rem 0 8rem 0;
+
+  h2.post-title {
+    font-size: 3.6rem;
+    font-weight: lighter;
+    margin: 0;
+  }
+  span.post-date {
+    font-size: .8rem;
+    font-family: "PT Serif", Georgia, "Times New Roman", serif;
+    color: rgba($gray,.5);
+  }
+  header { margin-bottom: 3rem; }
+}
+
+/*
+* footer
+* 文章
+*/
+
+footer.article-footer {
+  background-color: rgba($gray-light,.5);
+  //padding: 2rem 0;
+  .pagination-item {
+    display: block;
+    overflow: hidden; /* clearfix */
+    padding: 2rem 0;
+    color: $black;
+    position: relative;
+  }
+  .pagination-item h4 { margin: 0; font-weight: normal; font-size: 1.4em; color: $black; transition: all .3s ease; }
+  .pagination-item span { font-size: 12px; color: rgba($gray,.3); letter-spacing: .26rem; padding: 0 1rem; transition: all .3s ease; }
+  .pagination-item.next { text-align: right; }
+  .pagination-item.next::before {
+    content: "|";
+    color: rgba($gray,1);
+    position: absolute;
+    left: -1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .pagination-item:hover {
+    span { color: $gray; }
+    h4 { color: #000; text-decoration: underline; }
+  }
+}
+
+
+/*
+* sidebar
+* 文章
+*/
+aside.sidebar {
+  display: none;
+  background-color: $black-dark;
+  padding: 1rem 1.2rem;
+
+  .logo span {
+    display: inline-block;
+    float: right;
+    color: rgba($gray,.1);
+    transition: color .3s ease;
+  }
+
+  .logo>a:hover {
+    &+span { color: rgba($gray,.8) }
+  }
+
+  h2 {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    color: $gray-dark;
+    margin-top: 2rem;
+  }
+  dt>a {
+    color: $white-dark;
+    font-size: .8rem;
+    line-height: 2rem;
+  }
+  dd>a {
+    color: rgba($white-dark,.8);
+    margin-left: 0;
+    margin-bottom: .6rem;
+    line-height: 1.1rem;
+    font-size: .8rem;
+
+    &::before {
+      content: "# ";
+      font-weight: bolder;
+      font-family: "PT Serif", Georgia, "Times New Roman", serif;
+      color: rgba($black-light,.5);
+    }
+  }
+
+  dt,dd { transition: all .3s ease; }
+
+  dt:hover,dd:hover {
+    padding-left: 3px;
+    &>a {
+      color: $brand;
+    }
+  }
+}

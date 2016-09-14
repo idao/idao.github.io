@@ -1,0 +1,1 @@
+var indexHeight=$("section#index").outerHeight()-200;$(document).ready(function(){var e=$(this).scrollTop();0==e&&$("header#nav").hide()}),$(window).scroll(function(e){var n=$(this).scrollTop();n>indexHeight?$("header#nav").fadeIn():$("header#nav").fadeOut()});

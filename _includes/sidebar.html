@@ -1,0 +1,50 @@
+<aside id="sidebar" class="sidebar">
+  <div class="logo">
+    <a target="_blank" href="/">第一课<sup> PM</sup></a>
+    <span><i class="fa fa-home" aria-hidden="true"></i></span>
+  </div>
+  <nav>
+    <h2>基础学习</h2>
+
+    <dl>
+      {% for post in site.posts %}
+        <dt>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </dt>
+        {% for item in page.subnav %}
+          <dd>
+            <a href="{{ item.url }}">{{ item.title }}</a>
+          </dd>
+        {% endfor %}
+      {% endfor %}
+    </dl>
+
+    <dl class="">
+      <dt>前言</dt>
+      <dd>为什么做这个系列教程</dd>
+      <dd>哪些人适合阅读</dd>
+      <dd>本教程遵循和设计的原则</dd>
+      <dd>学完这个教程将收获什么</dd>
+    </dl>
+    <dl class="">
+      <dt>前言</dt>
+      <dd>为什么做这个系列教程</dd>
+      <dd>哪些人适合阅读哪些人适合阅读哪些人适合阅读哪些人适合阅读</dd>
+      <dd>本教程遵循和设计的原则</dd>
+      <dd>学完这个教程将收获什么</dd>
+    </dl>
+    <dl class="">
+      <dt>前言</dt>
+      <dd>为什么做这个系列教程</dd>
+      <dd>哪些人适合阅读</dd>
+      <dd>本教程遵循和设计的原则</dd>
+      <dd>学完这个教程将收获什么</dd>
+    </dl>
+
+
+    <h2>实战训练</h2>
+    <dl class="">
+      <dt>Coming soon...</dt>
+    </dl>
+  </nav>
+</aside>

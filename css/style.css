@@ -1,0 +1,741 @@
+@charset "UTF-8";
+@import url(font-awesome.css);
+@import url(normalize.css);
+/*
+* ----------
+* 全局颜色使用
+* ----------
+*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */ }
+
+body {
+  color: #3D464D; }
+
+a {
+  color: #3EC3D4; }
+
+/*
+* ----------
+* border-box
+* ----------
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*
+* ----------
+* 容器
+* ----------
+*/
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+/*
+* ----------
+* 网格系统
+* ----------
+*/
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -1rem;
+  margin-right: -1rem; }
+
+.row.loop-wrap {
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.column {
+  flex: 1;
+  padding-right: 1rem;
+  padding-left: 1rem; }
+
+.column.col-1 {
+  flex-basis: 8.333333%;
+  max-width: 8.333333%; }
+
+.column.col-2 {
+  flex-basis: 16.666667%;
+  max-width: 16.666667%; }
+
+.column.col-3 {
+  flex-basis: 25%;
+  max-width: 25%; }
+
+.column.col-4 {
+  flex-basis: 33.333333%;
+  max-width: 33.333333%; }
+
+.column.col-5 {
+  flex-basis: 41.666667%;
+  max-width: 41.666667%; }
+
+.column.col-6 {
+  flex-basis: 50%;
+  max-width: 50%; }
+
+.column.col-7 {
+  flex-basis: 58.888889%;
+  max-width: 58.888889%; }
+
+.column.col-8 {
+  flex-basis: 66.666667%;
+  max-width: 66.666667%; }
+
+.column.col-9 {
+  flex-basis: 75%;
+  max-width: 75%; }
+
+.column.col-10 {
+  flex-basis: 83.333333%;
+  max-width: 83.333333%; }
+
+.column.col-11 {
+  flex-basis: 91.666667%;
+  max-width: 91.666667%; }
+
+.col-offset-1 {
+  margin-left: 8.333333%; }
+
+.col-offset-2 {
+  margin-left: 16.666667%; }
+
+.col-offset-3 {
+  margin-left: 25%; }
+
+.col-offset-4 {
+  margin-left: 33.333333%; }
+
+/*
+* ---------
+* block 浮动布局
+* ---------
+*/
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+.clearfix {
+  *zoom: 1; }
+
+.clearfix:after, .clearfix:before {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+/*
+* --------
+* inline 文本排版
+* --------
+*/
+.align-right {
+  text-align: right; }
+
+.align-left {
+  text-align: left; }
+
+.align-center {
+  text-align: center; }
+
+/*
+* --------
+* 垂直居中
+* --------
+*/
+.vertical-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.vertical-middle {
+  vertical-align: middle; }
+
+/*
+* ----------
+* A标签适当的动画属性
+* ----------
+*/
+a {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  transition: all .2s ease; }
+
+input[type='text'],
+input[type='password'],
+input[type='textarea'] {
+  outline: none; }
+
+/*
+* ----------
+* 图片:响应式
+* ----------
+*/
+img {
+  border: none;
+  max-width: 100%;
+  vertical-align: middle; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+/*
+* ----------
+* 视频:响应式
+* ----------
+*/
+.video-responsive {
+  position: relative;
+  height: 0;
+  padding-top: 3rem;
+  padding-bottom: 56.25%;
+  overflow: hidden; }
+  .video-responsive iframe, .video-responsive object, .video-responsive embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .video-responsive video {
+    width: 100%;
+    max-width: 100%;
+    height: auto; }
+
+/*
+* ----------
+* 重构 H1~H6
+* ----------
+*/
+/*
+* 按钮的一种类型
+*
+*  1. <a class="btn">按钮</a>
+*  2. <button>按钮</button>
+*  3. <input type="submit" value="按钮" />
+*
+*/
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #3EC3D4;
+  color: #FFF;
+  text-decoration: none;
+  outline: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  transition: all .2s ease; }
+  .button:hover, .button:active,
+  button:hover,
+  button:active,
+  input[type='button']:hover,
+  input[type='button']:active,
+  input[type='reset']:hover,
+  input[type='reset']:active,
+  input[type='submit']:hover,
+  input[type='submit']:active {
+    background-color: #279fae;
+    color: #FFF; }
+
+.button.btn-outline {
+  border-color: #3EC3D4;
+  background-color: transparent;
+  color: #3EC3D4; }
+  .button.btn-outline:hover {
+    border-color: transparent;
+    background-color: #3EC3D4;
+    color: #FFF; }
+
+.button.btn-blank {
+  border: none;
+  background-color: #FFF;
+  color: #3EC3D4; }
+  .button.btn-blank:hover, .button.btn-blank:active {
+    color: #279fae;
+    background-color: #FAFAFA; }
+
+.button.is--disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: .8; }
+
+/*
+* 导航栏
+* .navigation 是 导航条
+* .menu 是 导航条下面的菜单
+*/
+.navigation {
+  height: 64px;
+  display: flex;
+  align-items: center; }
+
+.navigation.between {
+  justify-content: space-between; }
+
+.navigation ul.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.navigation ul.menu li {
+  display: inline-block;
+  margin-left: 20px; }
+
+/*
+* 引用
+*
+*/
+blockquote {
+  font-style: italic;
+  margin: 0; }
+
+blockquote:before {
+  color: #EAEEF1;
+  content: "\201C";
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em; }
+
+blockquote cite {
+  display: block;
+  padding-right: .8em;
+  text-align: right;
+  font-size: .8em;
+  color: #7B8994;
+  line-height: 4em;
+  height: 4em; }
+  blockquote cite img {
+    height: 2em;
+    width: auto;
+    vertical-align: middle; }
+  blockquote cite a {
+    color: #7B8994; }
+
+/*
+* --------
+* Tooltip 悬浮提示
+* --------
+*/
+.tooltip {
+  position: relative; }
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  font-size: .8em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.86);
+  border-color: #000;
+  padding: .3em .6em;
+  border-radius: 2px;
+  max-width: 30em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0;
+  pointer-events: none;
+  white-space: pre;
+  z-index: 999;
+  display: inline-block;
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .3s ease; }
+
+.tooltip:hover::after {
+  opacity: 1;
+  top: -2em; }
+
+/*
+* --------
+* 媒体类型
+* --------
+*/
+.media {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.media.media-right {
+  display: flex;
+  flex-direction: column; }
+
+/* 1 */
+/*
+* 首页 CSS
+* index.html CSS
+*/
+section#index .container {
+  text-align: center;
+  padding: 8rem 0; }
+section#index .brand {
+  margin-bottom: 6.4rem; }
+section#index .brand h1 {
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  text-indent: -9999999px;
+  background: url("../img/logo.png") no-repeat center center;
+  background-size: contain;
+  width: 240px;
+  height: 180px;
+  overflow: hidden; }
+section#index .brand .desc {
+  color: #697681;
+  font-weight: lighter; }
+section#index .btn-group a {
+  font-size: 2rem;
+  font-size: "calibri", "PingFang SC", "Helvetica", "Arial", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  padding: 1rem 2rem;
+  border-bottom-color: #2ebdcf;
+  border-width: 3px;
+  border-radius: 1000px; }
+  section#index .btn-group a:hover {
+    border-bottom-color: transparent; }
+section#index .btn-group .basic-teaching,
+section#index .btn-group .practical-training {
+  display: inline-block;
+  margin: 0 1rem; }
+section#index .practical-training {
+  position: relative; }
+section#index .practical-training p {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #EAEEF1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+section#core {
+  margin-bottom: 8rem; }
+  section#core .container::before {
+    display: block;
+    content: "‐ 核心价值 ‐";
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 10px;
+    font-weight: lighter;
+    color: #7B8994; }
+  section#core .column {
+    text-align: center; }
+  section#core h3 {
+    display: inline-block;
+    color: #3D464D;
+    padding-left: 4rem;
+    line-height: 3rem;
+    height: 3rem; }
+  section#core .experience-sharing h3 {
+    background: url(../img/icon-experience-sharing.png) no-repeat left center;
+    background-size: contain; }
+  section#core .tool-stacks h3 {
+    background: url(../img/icon-tool-stacks.png) no-repeat left center;
+    background-size: contain; }
+  section#core .practical-thinking h3 {
+    background: url(../img/icon-practical-thinking.png) no-repeat left center;
+    background-size: contain; }
+  section#core p.desc {
+    color: #697681; }
+
+section#oriented {
+  margin-bottom: 8rem; }
+  section#oriented .container::before {
+    display: block;
+    content: "‐ 本课程适合人群 ‐";
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 10px;
+    font-weight: lighter;
+    color: #7B8994; }
+  section#oriented .oriented {
+    border: 1px solid #EAEEF1;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0 1rem;
+    transition: all .3s ease; }
+    section#oriented .oriented .col-top {
+      padding: 1rem;
+      padding-top: 15rem;
+      transition: all .3s ease; }
+      section#oriented .oriented .col-top h4 {
+        color: #fff;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+        font-size: 40px;
+        margin: 0; }
+      section#oriented .oriented .col-top h4::before {
+        display: block;
+        content: "我是";
+        padding-left: 3px;
+        font-size: .4em;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 0.5); }
+    section#oriented .oriented.producter .col-top {
+      background: url(../img/producter.jpg) no-repeat center center;
+      background-size: 101%; }
+    section#oriented .oriented.designer .col-top {
+      background: url(../img/designer.jpg) no-repeat center center;
+      background-size: 101%; }
+    section#oriented .oriented.progammer .col-top {
+      background: url(../img/progammer.jpg) no-repeat center center;
+      background-size: 101%; }
+    section#oriented .oriented .col-bottom {
+      padding: 1rem;
+      overflow: hidden;
+      font-size: .8rem; }
+  section#oriented .oriented:hover {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1); }
+    section#oriented .oriented:hover .col-top {
+      background-size: 105%; }
+
+section#why {
+  margin-bottom: 8rem; }
+  section#why .container::before {
+    display: block;
+    content: "‐ 设计该课程初衷 ‐";
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 10px;
+    font-weight: lighter;
+    color: #7B8994; }
+  section#why blockquote {
+    margin: 0 auto;
+    max-width: 600px;
+    color: #7B8994; }
+    section#why blockquote img {
+      border-radius: 100px; }
+
+footer#footer {
+  background-color: #EDF1F4; }
+  footer#footer .title {
+    font-size: 10px;
+    font-weight: lighter;
+    color: #7B8994; }
+  footer#footer .footer-top .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+  footer#footer .footer-top input[type="text"] {
+    width: 240px;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #697681;
+    transition: all .3s ease; }
+    footer#footer .footer-top input[type="text"]:hover {
+      border-color: #3EC3D4; }
+  footer#footer .footer-top .follow-me a {
+    display: inline-block;
+    margin: 0 .8rem;
+    color: #7B8994; }
+    footer#footer .footer-top .follow-me a:hover {
+      color: #697681; }
+  footer#footer .footer-bottom {
+    font-size: 10px;
+    color: #7B8994;
+    padding: 2rem 0; }
+
+@media screen and (max-width: 760px) {
+  section#core .row {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem; }
+  section#core .row .column {
+    margin-bottom: 2rem; }
+
+  section#oriented .row {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem; }
+  section#oriented .row .column {
+    text-align: center;
+    margin-bottom: 3rem; }
+
+  section#why .container {
+    padding: 0 2rem; }
+
+  footer#footer {
+    text-align: center; }
+    footer#footer .row {
+      display: flex;
+      flex-direction: column;
+      padding: 0 2rem; }
+    footer#footer .row .column {
+      text-align: center; } }
+@media screen and (max-width: 480px) {
+  section#index .btn-group a {
+    display: block;
+    width: 100%; }
+  section#index .btn-group .basic-teaching {
+    margin-bottom: 2rem; }
+
+  footer#footer .row {
+    display: flex;
+    flex-direction: column; } }
+/*
+* article
+* 文章
+*/
+main#main {
+  padding-top: 64px;
+  position: relative; }
+
+header.article-header {
+  position: fixed;
+  height: 64px;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  color: #7B8994;
+  background-color: #fff;
+  border-bottom: 1px solid #EAEEF1;
+  z-index: 1000; }
+  header.article-header.nav-up {
+    top: -64px !important; }
+  header.article-header .trigger {
+    padding: 1rem;
+    margin-left: -1rem;
+    cursor: pointer;
+    transition: color .3s ease; }
+  header.article-header .trigger:hover {
+    color: #3EC3D4; }
+  header.article-header .title {
+    color: #EAEEF1; }
+    header.article-header .title sup {
+      font-weight: lighter; }
+  header.article-header .menu li {
+    color: #EAEEF1;
+    transition: color .3s ease; }
+  header.article-header .menu li:hover {
+    color: #7B8994; }
+
+article.article-post {
+  font-size: 1.3em;
+  padding: 4rem 0 8rem 0; }
+  article.article-post h2.post-title {
+    font-size: 3.6rem;
+    font-weight: lighter;
+    margin: 0; }
+  article.article-post span.post-date {
+    font-size: .8rem;
+    font-family: "PT Serif", Georgia, "Times New Roman", serif;
+    color: rgba(123, 137, 148, 0.5); }
+  article.article-post header {
+    margin-bottom: 3rem; }
+
+/*
+* footer
+* 文章
+*/
+footer.article-footer {
+  background-color: rgba(234, 238, 241, 0.5); }
+  footer.article-footer .pagination-item {
+    display: block;
+    overflow: hidden;
+    /* clearfix */
+    padding: 2rem 0;
+    color: #3D464D;
+    position: relative; }
+  footer.article-footer .pagination-item h4 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.4em;
+    color: #3D464D;
+    transition: all .3s ease; }
+  footer.article-footer .pagination-item span {
+    font-size: 12px;
+    color: rgba(123, 137, 148, 0.3);
+    letter-spacing: .26rem;
+    padding: 0 1rem;
+    transition: all .3s ease; }
+  footer.article-footer .pagination-item.next {
+    text-align: right; }
+  footer.article-footer .pagination-item.next::before {
+    content: "|";
+    color: #7b8994;
+    position: absolute;
+    left: -1rem;
+    top: 50%;
+    transform: translateY(-50%); }
+  footer.article-footer .pagination-item:hover span {
+    color: #7B8994; }
+  footer.article-footer .pagination-item:hover h4 {
+    color: #000;
+    text-decoration: underline; }
+
+/*
+* sidebar
+* 文章
+*/
+aside.sidebar {
+  display: none;
+  background-color: #1B2126;
+  padding: 1rem 1.2rem; }
+  aside.sidebar .logo span {
+    display: inline-block;
+    float: right;
+    color: rgba(123, 137, 148, 0.1);
+    transition: color .3s ease; }
+  aside.sidebar .logo > a:hover + span {
+    color: rgba(123, 137, 148, 0.8); }
+  aside.sidebar h2 {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    color: #606F7B;
+    margin-top: 2rem; }
+  aside.sidebar dt > a {
+    color: #EDF1F4;
+    font-size: .8rem;
+    line-height: 2rem; }
+  aside.sidebar dd > a {
+    color: rgba(237, 241, 244, 0.8);
+    margin-left: 0;
+    margin-bottom: .6rem;
+    line-height: 1.1rem;
+    font-size: .8rem; }
+    aside.sidebar dd > a::before {
+      content: "# ";
+      font-weight: bolder;
+      font-family: "PT Serif", Georgia, "Times New Roman", serif;
+      color: rgba(105, 118, 129, 0.5); }
+  aside.sidebar dt, aside.sidebar dd {
+    transition: all .3s ease; }
+  aside.sidebar dt:hover, aside.sidebar dd:hover {
+    padding-left: 3px; }
+    aside.sidebar dt:hover > a, aside.sidebar dd:hover > a {
+      color: #3EC3D4; }
